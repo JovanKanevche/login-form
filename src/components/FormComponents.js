@@ -4,7 +4,7 @@ import { ErrorMessage } from "@hookform/error-message";
 export const InputField = React.forwardRef((props, ref) => {
   return (
     <div>
-      <h3>{props.label}</h3>
+      <h3 className="pb-1">{props.label}</h3>
       <input
         ref={ref}
         className="w-full border py-2"
@@ -23,7 +23,7 @@ export const InputField = React.forwardRef((props, ref) => {
 export const RoleField = React.forwardRef((props, ref) => {
   return (
     <div>
-      <h3>{props.label}</h3>
+      <h3 className="pb-1">{props.label}</h3>
       <select
         ref={ref}
         aria-label={props.label}
